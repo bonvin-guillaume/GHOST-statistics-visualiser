@@ -20,9 +20,7 @@ The dashboard reads all CSV files in `labelled_data/` with schema:
 
 From the project root:
 
-- `
-
-`
+- `streamlit run app.py`
 
 Streamlit will print a local URL (usually `http://localhost:8501`) to open in your browser.
 
