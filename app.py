@@ -139,8 +139,16 @@ def build_hour_heatmap(dataframe: pd.DataFrame) -> pd.DataFrame:
 
 
 def main() -> None:
-    st.set_page_config(page_title="GHOST Time-of-Day Dashboard", layout="wide")
-    st.title("GHOST Time-of-Day Dashboard")
+    st.set_page_config(
+        page_title="GHOST Time-of-Day Dashboard",
+        layout="wide",
+    )
+    
+    col1, col2 = st.columns([1, 8])
+    with col1:
+        st.image("assets/ghost-stats-logo-1.png", use_container_width=True)
+    with col2:
+        st.title("GHOST Time-of-Day Dashboard")
     st.caption("Visualise when GHOST-aurora, non-GHOST-aurora, and Unknown occur in UT.")
 
     try:
